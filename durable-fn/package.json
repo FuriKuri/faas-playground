@@ -1,0 +1,7 @@
+{
+  "name": "durable-fn",
+  "dependencies": {
+    "durable-functions": "^1.1.4"
+  },
+  "devDependencies": {}
+}
