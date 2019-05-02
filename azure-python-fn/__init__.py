@@ -5,10 +5,9 @@ import azure.functions as func
 def main(req: func.HttpRequest) -> func.HttpResponse:
     try:
         req_body = req.get_json()
-    except ValueError:
-        pass
-    else:
         name = req_body.get('name')
+    except:
+        name = 'World'
 
     if not name:
         name = 'World'
